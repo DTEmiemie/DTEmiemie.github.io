@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: DTEmiemie
+title: DTEmiemie's Record
 subtitle: ''
 description: ''
 keywords: DTEmiemie
@@ -101,3 +101,4 @@ deploy:
   type: git
   repo: https://github.com/DTEmiemie/DTEmiemie.github.io.git
   branch: master
+
