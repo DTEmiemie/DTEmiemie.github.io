@@ -2,10 +2,7 @@
 title: hello
 date: 2013/7/13 20:45:21
 categories:
-- [Sports, Baseball]
-- [MLB, American League, Boston Red Sox]
-- [MLB, American League, New York Yankees]
-- Rivalries
+- Sports
 ---
 
 
