@@ -102,3 +102,11 @@ deploy:
   repo: https://github.com/DTEmiemie/DTEmiemie.github.io.git
   branch: master
 
+# DTEmiemie added
+
+## hexo-excerpt plugin
+excerpt:
+  depth: 5
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
