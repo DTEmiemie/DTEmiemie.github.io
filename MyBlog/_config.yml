@@ -111,7 +111,7 @@ excerpt:
   more_excludes: []
   hideWholePostExcerpts: true
 
-## hexo-auto-category
+## hexo-auto-category plugin
 # Generate categories from directory-tree
 # Dependencies: https://github.com/xu-song/hexo-auto-category
 # depth: the max_depth of directory-tree you want to generate, should > 0
