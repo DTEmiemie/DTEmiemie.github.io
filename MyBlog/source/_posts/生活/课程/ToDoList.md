@@ -1,5 +1,8 @@
 ---
 title: Course To Do List
+categories:
+  - 生活
+  - 课程
 date: 2020-02-25 13:04:55
 tags:
 ---
