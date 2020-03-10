@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.dtemiemie.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"blog.dtemiemie.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta property="og:type" content="website">
@@ -34,8 +34,8 @@
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome : true,
+    isPost : false
   };
 </script>
 
@@ -78,6 +78,14 @@
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
   <div class="site-meta">
 
     <div>
@@ -89,11 +97,8 @@
     </div>
   </div>
 
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
     </div>
   </div>
 </div>
@@ -147,7 +152,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/03/08/%E7%94%9F%E6%B4%BB/%E6%9D%82%E8%B0%88/2020%E5%B9%B43%E6%9C%888%E6%97%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -177,15 +182,11 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E6%9D%82%E8%B0%88/" itemprop="url" rel="index">
-                    <span itemprop="name">杂谈</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E6%9D%82%E8%B0%88/" itemprop="url" rel="index"><span itemprop="name">杂谈</span></a>
                 </span>
             </span>
 
@@ -231,7 +232,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/03/06/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/2020%E5%B9%B43%E6%9C%886%E6%97%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -261,21 +262,15 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">课程</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="url" rel="index">
-                    <span itemprop="name">微观经济学</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">微观经济学</span></a>
                 </span>
             </span>
 
@@ -324,7 +319,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/03/05/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/2020%E5%B9%B43%E6%9C%885%E6%97%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -354,21 +349,15 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">课程</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="url" rel="index">
-                    <span itemprop="name">微观经济学</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">微观经济学</span></a>
                 </span>
             </span>
 
@@ -422,7 +411,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/03/04/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E8%B4%A2%E7%BB%8F%E5%BA%94%E7%94%A8%E6%96%87%E5%86%99%E4%BD%9C/2020%E5%B9%B43%E6%9C%884%E6%97%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -452,21 +441,15 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">课程</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E8%B4%A2%E7%BB%8F%E5%BA%94%E7%94%A8%E6%96%87%E5%86%99%E4%BD%9C/" itemprop="url" rel="index">
-                    <span itemprop="name">财经应用文写作</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E8%B4%A2%E7%BB%8F%E5%BA%94%E7%94%A8%E6%96%87%E5%86%99%E4%BD%9C/" itemprop="url" rel="index"><span itemprop="name">财经应用文写作</span></a>
                 </span>
             </span>
 
@@ -512,7 +495,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/03/04/%E5%8D%9A%E5%AE%A2/%E6%8F%92%E4%BB%B6/%E9%9A%90%E8%97%8F%E5%86%85%E5%AE%B9%E6%96%87%E6%9C%AC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -542,15 +525,11 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index">
-                    <span itemprop="name">博客</span>
-                  </a>
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="name">博客</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2/%E6%8F%92%E4%BB%B6/" itemprop="url" rel="index">
-                    <span itemprop="name">插件</span>
-                  </a>
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2/%E6%8F%92%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">插件</span></a>
                 </span>
             </span>
 
@@ -598,7 +577,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/03/04/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E4%BC%9A%E8%AE%A1%E5%AD%A6/2020%E5%B9%B43%E6%9C%884%E6%97%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -634,21 +613,15 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">课程</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E4%BC%9A%E8%AE%A1%E5%AD%A6/" itemprop="url" rel="index">
-                    <span itemprop="name">会计学</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E4%BC%9A%E8%AE%A1%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">会计学</span></a>
                 </span>
             </span>
 
@@ -697,7 +670,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/03/03/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/2020%E5%B9%B43%E6%9C%883%E6%97%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -727,21 +700,15 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">课程</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">线性代数</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" itemprop="url" rel="index"><span itemprop="name">线性代数</span></a>
                 </span>
             </span>
 
@@ -779,7 +746,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/02/28/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/2020%E5%B9%B42%E6%9C%8828%E6%97%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -815,21 +782,15 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">课程</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
-                    <span itemprop="name">大学计算机应用基础</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">大学计算机应用基础</span></a>
                 </span>
             </span>
 
@@ -869,7 +830,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/02/25/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/ToDoList/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -905,15 +866,11 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">课程</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
                 </span>
             </span>
 
@@ -970,7 +927,7 @@
     <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/02/24/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/2020%E5%B9%B42%E6%9C%8824%E6%97%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="image" content="/images/custom/avatars/avatar02.jpg">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
     </span>
@@ -1000,21 +957,15 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">课程</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">课程</span></a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
-                    <span itemprop="name">大学计算机应用基础</span>
-                  </a>
+                  <a href="/categories/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">大学计算机应用基础</span></a>
                 </span>
             </span>
 
@@ -1082,7 +1033,7 @@
 
 <script>
   window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
+    let { activeClass } = CONFIG.comments;
     if (CONFIG.comments.storage) {
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
@@ -1131,7 +1082,7 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt=""
-      src="/images/avatars/avatar02.jpg">
+      src="/images/custom/avatars/avatar02.jpg">
   <p class="site-author-name" itemprop="name"></p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -1185,7 +1136,7 @@
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.1
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.2
   </div>
 
         
