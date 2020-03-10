@@ -1,0 +1,3 @@
+[submodule "MyBlog/themes/hexo-theme-next"]
+	path = MyBlog/themes/hexo-theme-next
+	url = https://github.com/theme-next/hexo-theme-next
