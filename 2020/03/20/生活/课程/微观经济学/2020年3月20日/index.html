@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.dtemiemie.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="弹性需求弹性基本概念 一个人对某种商品的需求的惟一普遍规律就是：如果其他情况不变，他对此商品的需求会随着对其拥有量的增加而递减。这种递减也许缓慢也许迅速。如果缓慢，那么他对此商品所出的价格，就不会因为他对此商品的拥有量的大量增加而大幅度下降；而且价格的小幅度下降会使他的购买量大幅度增加。市场需求也是如此，市场中需求弹性（或感应性）的大小，是由需求量在价格的一定程度的下跌时增加多少以及在价格的一定程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="“2020年3月20日”">
+<meta property="og:url" content="https://blog.dtemiemie.com/2020/03/20/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/2020%E5%B9%B43%E6%9C%8820%E6%97%A5/index.html">
+<meta property="og:site_name" content="DTEmiemie&#39;s Record">
+<meta property="og:description" content="弹性需求弹性基本概念 一个人对某种商品的需求的惟一普遍规律就是：如果其他情况不变，他对此商品的需求会随着对其拥有量的增加而递减。这种递减也许缓慢也许迅速。如果缓慢，那么他对此商品所出的价格，就不会因为他对此商品的拥有量的大量增加而大幅度下降；而且价格的小幅度下降会使他的购买量大幅度增加。市场需求也是如此，市场中需求弹性（或感应性）的大小，是由需求量在价格的一定程度的下跌时增加多少以及在价格的一定程">
+<meta property="og:image" content="file:///C:/Users/DTEmiemie/AppData/Roaming/Tencent/Users/1140327989/TIM/WinTemp/RichOle/THVJ2RW117K[32RY1_C0LP9.png">
+<meta property="og:image" content="c:/Users/DTEmiemie/AppData/Roaming/Typora/typora-user-images/image-20200320104548170.png">
+<meta property="og:image" content="c:/Users/DTEmiemie/AppData/Roaming/Typora/typora-user-images/image-20200320110223892.png">
+<meta property="og:image" content="c:/Users/DTEmiemie/AppData/Roaming/Typora/typora-user-images/image-20200320110942954.png">
+<meta property="og:image" content="c:/Users/DTEmiemie/AppData/Roaming/Typora/typora-user-images/image-20200320111840238.png">
+<meta property="og:image" content="c:/Users/DTEmiemie/AppData/Roaming/Typora/typora-user-images/image-20200320111921693.png">
+<meta property="article:published_time" content="2020-03-20T02:16:44.000Z">
+<meta property="article:modified_time" content="2020-03-20T03:28:08.228Z">
+<meta property="article:tag" content="DTEmiemie">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///C:/Users/DTEmiemie/AppData/Roaming/Tencent/Users/1140327989/TIM/WinTemp/RichOle/THVJ2RW117K[32RY1_C0LP9.png">
+
+<link rel="canonical" href="https://blog.dtemiemie.com/2020/03/20/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/2020%E5%B9%B43%E6%9C%8820%E6%97%A5/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true
+  };
+</script>
+
+  <title>“2020年3月20日” | DTEmiemie's Record</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DTEmiemie's Record</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">放过自己</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://blog.dtemiemie.com/2020/03/20/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/2020%E5%B9%B43%E6%9C%8820%E6%97%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatars/avatar02.jpg">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DTEmiemie's Record">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          “2020年3月20日”
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-20 10:16:44 / 修改时间：11:28:08" itemprop="dateCreated datePublished" datetime="2020-03-20T10:16:44+08:00">2020-03-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="弹性"><a href="#弹性" class="headerlink" title="弹性"></a>弹性</h1><h2 id="需求弹性"><a href="#需求弹性" class="headerlink" title="需求弹性"></a>需求弹性</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><blockquote>
+<p>一个人对某种商品的需求的惟一普遍规律就是：如果其他情况不变，他对此商品的需求会随着对其拥有量的增加而递减。这种递减也许缓慢也许迅速。如果缓慢，那么他对此商品所出的价格，就不会因为他对此商品的拥有量的大量增加而大幅度下降；而且价格的小幅度下降会使他的购买量大幅度增加。<br>市场需求也是如此，市场中需求弹性（或感应性）的大小，是由需求量在价格的一定程度的下跌时增加多少以及在价格的一定程度的上涨时减少的多少而决定的。</p>
+</blockquote>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><h4 id="一览"><a href="#一览" class="headerlink" title="一览"></a>一览</h4><p><img src="file:///C:\Users\DTEmiemie\AppData\Roaming\Tencent\Users\1140327989\TIM\WinTemp\RichOle\THVJ2RW117K[32RY1_C0LP9.png" alt="img"></p>
+<blockquote>
+<p> <strong>Ed</strong> 指需求弹性系数</p>
+</blockquote>
+<h4 id="完全无弹性"><a href="#完全无弹性" class="headerlink" title="完全无弹性"></a>完全无弹性</h4><ul>
+<li><p><code>Ed=0</code></p>
+</li>
+<li><blockquote>
+<p>例子: <strong>粮食</strong></p>
+</blockquote>
+</li>
+</ul>
+<h4 id="富有弹性"><a href="#富有弹性" class="headerlink" title="富有弹性"></a>富有弹性</h4><ul>
+<li><code>Ed&gt;1</code></li>
+<li>各方面<ul>
+<li>价格<ul>
+<li>富有弹性的商品通常价格较高</li>
+</ul>
+</li>
+<li>类别<ul>
+<li>富有弹性的商品多为生活中的奢侈品，不是日常生活必需的；而缺乏弹性的商品多为生活必需品，比如盐和油</li>
+</ul>
+</li>
+<li>商品需求量与价格的关系<ul>
+<li>富有弹性的商品需求量受价格的影响较大，而缺乏弹性的商品需求量受价格的影响较小</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>目的<ul>
+<li>薄利多销<ul>
+<li>对于富有弹性的商品，适当降价可以增加收益，反之收益减少。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="缺乏弹性"><a href="#缺乏弹性" class="headerlink" title="缺乏弹性"></a>缺乏弹性</h4><ul>
+<li><p><code>Ed&lt;1</code></p>
+</li>
+<li><blockquote>
+<p>例子: <strong>蔬菜</strong></p>
+<ul>
+<li><strong>谷贱伤农</strong>：那么在丰收的年份，菜农反而赚的更少</li>
+</ul>
+</blockquote>
+</li>
+<li></li>
+</ul>
+<h3 id="影响需求弹性的因素"><a href="#影响需求弹性的因素" class="headerlink" title="影响需求弹性的因素"></a>影响需求弹性的因素</h3><ol>
+<li>相似替代品的可获得性。有相似替代品的商品需求弹性往往很大。例如黄油和人造黄油就可以很轻易的替代。而代用品越多，当一种商品价格提高时，消费者就越容易转向其他商品，所以弹性就越大，反之则越小。</li>
+<li>必需品与奢侈品。产品的性质，一般而言，生活必需的需求弹性较小，奢侈品需求弹性大。</li>
+<li>市场的定义，任何一个市场的需求都取决于我们所划定的市场范围。市场小则容易找到替代品。</li>
+<li>商品用途的广泛性，如果一种商品的用途很广泛，当商品的价格提高之后消费者在各种用途上可以适当地减少需求量，从而弹性越大，反之越小。</li>
+<li>商品消费支出在消费者预算支出中所占的比重，当一种商品在消费者预算支出中占很小的部分时，消费者并不大注意其价格的变化，如买一包口香糖，你可能不大会注意价格的变动。</li>
+<li>消费者调整需求量的时间，一般而言，消费者调整需求的时间越短，需求的价格弹性越小，相反调整时间越长，需求的价格弹性越大，如汽油价格上升，短期内不会影响其需求量，但长期人们可能寻找替代品，从而对需求量产生重大影响。</li>
+</ol>
+<h3 id="计算方法"><a href="#计算方法" class="headerlink" title="计算方法"></a>计算方法</h3><hr>
+<h2 id="价格弹性"><a href="#价格弹性" class="headerlink" title="价格弹性"></a>价格弹性</h2><h3 id="影响因素"><a href="#影响因素" class="headerlink" title="影响因素"></a>影响因素</h3><p><img src="C:\Users\DTEmiemie\AppData\Roaming\Typora\typora-user-images\image-20200320104548170.png" alt="image-20200320104548170"></p>
+<ul>
+<li><p>消费者对商品的需求强度（重要程度）</p>
+<ul>
+<li><blockquote>
+<p>必需品/奢侈品</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>商品的可替代性</p>
+<ul>
+<li><blockquote>
+<p>替代品数目和可替代程度</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>商品用途的广泛性</p>
+<ul>
+<li><blockquote>
+<p>用途多，需求弹性可能就大</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>商品价值大小或商品支出占总支出的比例</p>
+<ul>
+<li><blockquote>
+<p>商品支出占总支出的比例大，需求弹性可能就大</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>消费者调节需求量的时间</p>
+<ul>
+<li><blockquote>
+<p>时间长，需求弹性可能就大</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><img src="C:\Users\DTEmiemie\AppData\Roaming\Typora\typora-user-images\image-20200320110223892.png" alt="image-20200320110223892"> </p>
+<blockquote>
+<p>需求函数 $Q_d=2400-400p$ ，计算 $P=4,5$ 两点的点弹性</p>
+<p>   $P=4,Q_d=800$</p>
+<p>   $P=5,Q_d=400$</p>
+</blockquote>
+<h3 id="需求弹性的几何推导"><a href="#需求弹性的几何推导" class="headerlink" title="需求弹性的几何推导"></a>需求弹性的几何推导</h3><p><img src="C:\Users\DTEmiemie\AppData\Roaming\Typora\typora-user-images\image-20200320110942954.png" alt="image-20200320110942954"> </p>
+<p>$E_d= \frac{dQ}{dP} · \frac{P}{Q} = \frac{GB}{CG} · \frac{CG}{OG} = \frac{GB}{OG} = \frac{OF}{AF} = \frac{BC}{AC}$</p>
+<hr>
+<p><img src="C:\Users\DTEmiemie\AppData\Roaming\Typora\typora-user-images\image-20200320111840238.png" alt="image-20200320111840238"> </p>
+<p>$e_d = \frac{dQ}{dP} · \frac{P}{Q} $</p>
+<div class='spoiler collapsed'>
+    <div class='spoiler-title'>
+        练习
+    </div>
+    <div class='spoiler-content'>
+        <p><img src="C:\Users\DTEmiemie\AppData\Roaming\Typora\typora-user-images\image-20200320111921693.png" alt="image-20200320111921693"> </p>
+
+    </div>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/18/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E4%BC%9A%E8%AE%A1%E5%AD%A6/2020%E5%B9%B43%E6%9C%8818%E6%97%A5/" rel="prev" title="2020年3月18日">
+      <i class="fa fa-chevron-left"></i> 2020年3月18日
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/21/%E7%94%9F%E6%B4%BB/%E8%AF%BE%E7%A8%8B/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/2020%E5%B9%B43%E6%9C%8821%E6%97%A5-%E4%BD%9C%E4%B8%9A/" rel="next" title="2020年3月21日-做作业">
+      2020年3月21日-做作业 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#弹性"><span class="nav-number">1.</span> <span class="nav-text">弹性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求弹性"><span class="nav-number">1.1.</span> <span class="nav-text">需求弹性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分类"><span class="nav-number">1.1.2.</span> <span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一览"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">一览</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完全无弹性"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">完全无弹性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#富有弹性"><span class="nav-number">1.1.2.3.</span> <span class="nav-text">富有弹性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#缺乏弹性"><span class="nav-number">1.1.2.4.</span> <span class="nav-text">缺乏弹性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#影响需求弹性的因素"><span class="nav-number">1.1.3.</span> <span class="nav-text">影响需求弹性的因素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算方法"><span class="nav-number">1.1.4.</span> <span class="nav-text">计算方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#价格弹性"><span class="nav-number">1.2.</span> <span class="nav-text">价格弹性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#影响因素"><span class="nav-number">1.2.1.</span> <span class="nav-text">影响因素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#例题"><span class="nav-number">1.2.2.</span> <span class="nav-text">例题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#需求弹性的几何推导"><span class="nav-number">1.2.3.</span> <span class="nav-text">需求弹性的几何推导</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt=""
+      src="/images/avatars/avatar02.jpg">
+  <p class="site-author-name" itemprop="name"></p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder"></span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.2
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
